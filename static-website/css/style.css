@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+            /*----------------------------Navigationbar----------------------------*/
+.menu-bar{
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 700px;
+    padding-top: 15px; 
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    
+} 
+.menu-bar ul li{
+    width: 120px;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover {
+    background: #26a55b;
+    border-radius: 3px;
+} 
+.sub-menue1{
+    display: none;
+    color: white;
+}
+.menu-bar ul li:hover .sub-menue1{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 10px;
+    margin-left: -10px;   
+}
+.menu-bar ul li:hover .sub-menue1 ul{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menue1 ul li{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px ridge rgb(155, 155, 155);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menue1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menue1 ul li a:hover{
+    color: #26a55b;
+}
+
+            /*----------------------------Slider----------------------------*/
+#slider{
+
+    width: 100%;
+}
+#slider li{
+   background-color: black;
+}
+    .carousel-item img{
+    height: 300px;
+    width: 100%;
+}
+.carousel-control-prev-icon{
+    color: black;
+}
+.carousel-indicators li{
+    background-color: black;
+}
+            /*----------------------------About----------------------------*/
+
+#about{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    columns: #000000;
+    text-align: center;
+}  
+#about h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 40px;
+} 
+
+#about .btn{
+    margin-top: 20px;
+    color: black;
+    background-color:#26a55b;
+    margin-bottom: 40px;
+
+    }
+         /*----------------------------Services----------------------------*/
+
+#services{
+    background-image: url('../img/ser1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:500px;widows: 1200px;
+}
+
+#services h3{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.795)!important;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+#services h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 40px;
+}
+.text-center {
+    text-align: center!important;
+    color: whitesmoke;
+}
+.icon{
+    color: #26a55b;
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 05px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(207, 212, 224);
+    border-radius: 50%;
+}
+
+.services .col-md-3:hover{
+    background: gray;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+            /*----------------------------Our Partners----------------------------*/
+#our_partners{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#our_partners h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 50px;
+} 
+.partners ul li img{
+    margin-top: 10px;
+}  
+.partners ul{
+    display: inline-flex;
+    list-style: none;
+} 
+.partners ul li{
+    border-bottom: gray;
+}
+
+            /*-----------------------------Staffing-------------------------------*/
+#staffing{
+    text-align: center;
+    padding-top: 40px;
+    background: rgb(236, 236, 236);
+}
+#staffing h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 40px;
+}
+
+.thumbnail img {
+    margin-bottom: 15px;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    height: 240px; 
+} 
+        /*----------------------------Our Clients----------------------------*/
+    #our_clients{
+    padding-top: 50px;
+    text-align: center;
+}
+    #our_clients h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 40px;
+} 
+
+.clients ul{
+    display: inline-flex;
+    list-style: none;
+} 
+.clients ul li{
+    border-bottom: gray;
+}
+            /*-----------------------------Contact Us-------------------------------*/
+#contact{
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:300px; widows: 500px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+#contact h3{
+    text-align: center;
+}
+#contact h3::after {
+    content: '';
+    background: #26a55b;
+    display: block;
+    height: 2px;
+    width: 120px;
+    margin: 8px auto 50px;
+} 
+
+            
+            /*-----------------------------Footer-------------------------------*/
+#footer{
+    background: #333;
+    color: #fff;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+} 
+        /*------------------------------ABOUT COMPANY(about-company.html)-----------------------------*/ 
+        #about_company{
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        #about_company h3::after {
+            content: '';
+            background: #26a55b;
+            display: block;
+            height: 2px;
+            width: 120px;
+            margin: 8px auto 30px;
+        } 
+        #about_company h3{
+            text-align: center;
+            padding-right: 350px;
+        }
+        #about_company p{
+            text-align: justify;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 50px;
+        }
+         /*----------------------------Infrastructure Management(infrastructure_management.html)----------------------------*/
+         .panel-heading a{
+            color: black;
+            padding: 5px; 
+            font-size: 18px;
+            background-color: #26a55b;
+            text-align: left;
+            margin-top: 5px;
+         } 
+         .panel-heading a:hover{
+             color: #ffff;
+             text-decoration: none;
+         } 
+         
+         .panel-body li{
+         background-color: white;
+         color: gray;
+         }
+         
+         #infra h3::after {
+             content: '';
+             background: #26a55b;
+             display: block;
+             height: 2px;
+             width: 180px;
+             margin: 8px auto 40px;
+         }
+         #infra{
+             padding-bottom: 50px;
+         }
+            /*-----------------------------ABT COMPANY(about-company.html)-------------------------------*/
+
+            .testimonial .media-heading{
+                color:#26a55b; 
+                font-size: 12px;
+            }
+            #abt_company{
+                padding-top: 40px;
+            }
+            #abt_company h3{
+                text-align: center;
+            }
+            #abt_company p{
+                text-align: justify;
+            }
+            #abt_company h3::after {
+                content: '';
+                background: #26a55b;
+                display: block;
+                height: 2px;
+                width: 180px;
+                margin: 8px auto 40px;
+            }
+            
+                    
+                     
+                 
+
